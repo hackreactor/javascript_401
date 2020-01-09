@@ -4,7 +4,7 @@
 
 #### Scheduled Length: 3 Hours
 
-Hey there! Ready to get your hands dirty with some code? This is the practice exercise repository for Hack Reactor's JavaScript 401 workshop. JavaScript 301 is the fourth and final lesson in our free, four-part Introductory JavaScript Series (101, 201, 301 and 401). We're excited to have you.
+Hey there! Ready to get your hands dirty with some code? This is the practice exercise repository for Hack Reactor's JavaScript 401 workshop. JavaScript 401 is the fourth and final lesson in our free, four-part Introductory JavaScript Series (101, 201, 301 and 401). We're excited to have you.
 
 **EXPECTATION:** You will be expected to fully engage during lecture periods. Accordingly, please wait until the designated times during this live workshop to explore the exercises. You will be given 10-15 minutes per section, so please pace yourself accordingly.
 
@@ -27,7 +27,6 @@ _For your ease of access – click the following links for each section's practi
 - Part I: Hoisting (no exercises)
 - Part II: [Scopes](./2-scopes)
 - Part III: [Higher-Order Functions](./3-higher-order-functions)
-- Part IV: [Closures](./4-closures)
 
 ## Exercise Solutions
 
