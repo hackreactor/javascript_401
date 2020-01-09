@@ -24,8 +24,7 @@ var square = function(x) {
 
 #### Rewrite Functions
 
-1. We have two ways of writing a function. The **function declaration** is what we've
-   used so far, and the **function expression** is new to us. Rewrite the following
+1. We have two ways of writing a function. Rewrite the following
    *function declarations* using a *function expression*:
 
    ```js
