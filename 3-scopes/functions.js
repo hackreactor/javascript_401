@@ -20,6 +20,8 @@
       expect(ACTUAL === 'inner').to.be.true;
     });
 
+    // BASIC REQUIREMENTS:
+
     it('inputs to a function are treated as local scope variables', function () {
       var fn = function (name) {
         ACTUAL = name;
@@ -147,6 +149,8 @@
       fn();
       expect(ACTUAL === '???').to.be.true;
     });
+
+    // ADVANCED PRACTICE:
 
     it('the rule about retaining access to variables from an outer scope still applies, even after the outer function call (that created the outer scope) has returned', function () {
       var outerFn = function () {

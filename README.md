@@ -24,9 +24,9 @@ Each section of practice exercises has a `Basic Requirements` portion. Some sect
 
 _For your ease of access – click the following links for each section's practice exercises._
 
-- Part I: Hoisting (no exercises)
-- Part II: [Scopes](./2-scopes)
-- Part III: [Higher-Order Functions](./3-higher-order-functions)
+- Part I: [Hoisting](./1-hoisting)
+- Part II: [Higher-Order Functions](./2-higher-order-functions)
+- Part III: [Scopes](./3-scopes)
 
 ## Exercise Solutions
 

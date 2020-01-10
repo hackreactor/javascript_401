@@ -1,57 +1,12 @@
-# Part III: Higher-Order Functions
+# Part II: Higher-Order Functions
 
 *Note: Before getting started on these exercises, please be certain that you've read through the root [README.md](../README.md) file in this repository.*
 
 In order to complete these exercises, open [repl.it](https://repl.it/), choose JavaScript, and then write your code in the left-hand panel. You can run your code using the "Run" button.
 
-### Two Forms of Functions
-
-```js
-// function declaration
-function square(x) {
-  return x * x;
-}
-
-// function expression
-var square = function(x) {
-  return x * x;
-};
-```
-
 ## Exercises
 
 ### Basic Requirements
-
-#### Rewrite Functions
-
-1. We have two ways of writing a function. Rewrite the following
-   *function declarations* using a *function expression*:
-
-   ```js
-   // 1.
-   function cube(x) {
-     return x * x * x;
-   }
-   // 2.
-   function fullname(first, last) {
-     return first + " " + last;
-   }
-   // 3.
-   function power(base, exp) {
-     if (exp === 0) {
-       return 1;
-     }
-     return base * power(base, exp - 1);
-   }
-   // 4.
-   function sumCubes(numbers) {
-     var total = 0;
-     for (var i = 0; i < numbers.length; i++) {
-       total = total + cube(numbers[i]);
-     }
-     return total;
-   }
-   ```
 
 #### Iterating Over Arrays Using `each`
 
@@ -95,8 +50,7 @@ var square = function(x) {
     refactor it to use `each`.
 
 5.  Write a function called `odds` that accepts an array as a parameter and
-    returns an array of just the odd numbers. If you wrote it using `each`,
-    great! If you used anything else, refactor it to use a `for` loop.
+    returns an array of just the odd numbers.
 
 ### More Practice
 
