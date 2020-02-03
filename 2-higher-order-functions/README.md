@@ -26,6 +26,17 @@
    }
    ```
 
+   **SOLUTION:**
+   ```js
+   function sumSquares(numbers) {
+     var total = 0;
+     each(numbers, function(value){
+       total = total + Math.pow(value, 2);
+     });
+     return total;
+   }
+   ```
+
 3.  Rewrite `sumCubes` using `each`:
 
     ```js
@@ -38,15 +49,81 @@
     }
     ```
 
+    **SOLUTION:**
+    ```js
+    function sumCubes(numbers) {
+      var total = 0;
+      each(numbers, function(value){
+        total = total + cube(value);
+      });
+      return total;
+    }
+    ```
+
 3.  Write a function called `product` that calculates the product of an array of
     numbers using a `for` loop; then, refactor it to use `each`.
+
+    **SOLUTION:**
+    ```js
+    // using a for() loop
+    function product(numbers){
+      var total = 0;
+      for(var i = 0; i < numbers.length; i++){
+        total = total * numbers[i];
+      }
+      return total;
+    }
+
+    // refactor using each()
+    function product(numbers){
+      var total = 0;
+      each(numbers, function(value){
+        total = total * value;
+      });
+      return total;
+    }
+    ```
 
 4.  Write a function called `cubeAll` that cubes each number in an array, and
     returns an array of all the numbers *cubed* using a `for` loop; then,
     refactor it to use `each`.
 
+    **SOLUTION:**
+    ```js
+    // using a for() loop
+    function cubeAll(numbers){
+      var cubedArr = [];
+      for(var i = 0; i < numbers.length; i++){
+        cubedArr.push(cube(numbers[i]));
+      }
+      return cubedArr;
+    }
+
+    // refactor using each()
+    function cubeAll(numbers){
+      var cubedArr = [];
+      each(numbers, function(value){
+        cubedArr.push(cube(value));
+      });
+      return cubedArr;
+    }
+    ```
+
 5.  Write a function called `odds` that accepts an array as a parameter and
     returns an array of just the odd numbers.
+
+    **SOLUTION:**
+    ```js
+    function odds(numbers) {
+      var oddsArr = [];
+      each(numbers, function(value){
+        if(value % 2 !== 0){
+          odds.push(value);
+        }
+      });
+      return oddsArr;
+    }
+    ```
 
 ### More Practice
 
