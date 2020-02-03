@@ -10,7 +10,7 @@ In order to complete these exercises, open [repl.it](https://repl.it/), choose J
 
 #### Iterating Over Arrays Using `each`
 
-1. Write `each` as seen below in your code editor.
+1. Write `each` as seen below in your code editor (Do not just copy-paste!)
 
    ```js
    function each(array, func) {

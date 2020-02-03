@@ -33,7 +33,7 @@ Rewrite the following *function declarations* using a *function expression*:
  }
 
  // 2.
- function fullname(first, last) {
+ function fullName(first, last) {
    return first + " " + last;
  }
 
