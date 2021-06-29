@@ -62,7 +62,8 @@ Type out your best answers to the following questions:
 
   ```js
   console.log(message);
-
+ // because the declaration of the varuble is after the console log so message of console log is undefind
+ //When declering a var the output is undefind 
   var message = 'Hi there!';
   ```
 
@@ -70,7 +71,7 @@ Type out your best answers to the following questions:
 
     ```js
     console.log(message);
-
+      // because has already been declared and let value is usssed only once
     let message = 'Hi there!';
     ```
 
@@ -78,7 +79,7 @@ Type out your best answers to the following questions:
 
     ```js
     console.log(showMessage());
-
+//It will be an error because the code will be read frm the top and the consol will stop at the first line because showMessage is not a function yeet
     var showMessage = function(){
       return 'Hi there!';
     };
@@ -88,7 +89,7 @@ Type out your best answers to the following questions:
 
   ```js
   console.log(showMessage());
-
+// because the function has allredy been declaired and it is stored
   function showMessage(){
     return 'Hi there!';
   }
@@ -100,9 +101,13 @@ Restructure the following instances of code to work correctly:
 
  ```js
  // 1.
+ function getValues(values){
+  var array=[]
  for(var i = 0; i < values.length; i++){
-   console.log(values[i]);
+   array.push(values[i]);
  }
+    return array;
+}
 
  var values = [10, 20, 30];
  ```
@@ -111,7 +116,8 @@ Restructure the following instances of code to work correctly:
  console.log(welcome('Charlie', 'Munger'));
 
  function welcome(first, last) {
-   return `Welcome, ${first} ${last}! You last logged in on ${lastLogin}.`
+   var welc= `Welcome, ${first} ${last}! You last logged in on ${lastLogin}.`;
+   return welc
  };
 
  var lastLogin = '1/1/1970';
