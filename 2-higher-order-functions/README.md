@@ -25,7 +25,9 @@ In order to complete these exercises, open [repl.it](https://repl.it/), choose J
    ```js
    function sumSquares(numbers) {
      var total = 0;
-     // ...
+     each(numbers,function(element){
+        total += (element*element)
+     })
      return total;
    }
    ```
@@ -34,23 +36,69 @@ In order to complete these exercises, open [repl.it](https://repl.it/), choose J
 
     ```js
     function sumCubes(numbers) {
-      var total = 0;
-      for (var i = 0; i < numbers.length; i++) {
-        total = total + cube(numbers[i]);
-      }
-      return total;
-    }
+       var total = 0;
+     each(numbers,function(element){
+        total += (element*element*element)
+     })
+     return total;
+   }
     ```
 
 3.  Write a function called `product` that calculates the product of an array of
     numbers using a `for` loop; then, refactor it to use `each`.
+    
+     ``function product(number){
+       var total = 1 
+         each(number,function(numbers){
+           total*=numbers;
+    })
+      return total;
+     }
+    function product2(numbers){
+      var total=1
+       for(var i=0 ; i<numbers.length ; i++){
+        total = total*numbers[i]
+     }
+    return total
+ }``
 
 4.  Write a function called `cubeAll` that cubes each number in an array, and
     returns an array of all the numbers *cubed* using a `for` loop; then,
     refactor it to use `each`.
+    ``function cubeAll(number){
+       var arr = []
+         each(number,function(numbers){
+           arr.push(numbers*numbers*numbers);
+    })
+      return arr;
+     }
+    function product2(numbers){
+      var arr=[]
+       for(var i=0 ; i<numbers.length ; i++){
+        arr.push(numbers[i]*numbers[i]*numbers[i])
+     }
+    return arr
+ }``
+
 
 5.  Write a function called `odds` that accepts an array as a parameter and
     returns an array of just the odd numbers.
+   `` function odds(array){
+        var arr=[];
+        each(array,function(element){
+            arr.push(elements%2!==0);
+            })
+            return arr;
+    }
+    function odds(array){
+        var newArr=[];
+        for(var i=0;i<array.length;i++){
+            if(array[i]%2!==0){
+                newArr.push(array[i])
+            }
+        }
+        return newArr;
+    }``
 
 ### More Practice
 
@@ -58,6 +106,13 @@ In order to complete these exercises, open [repl.it](https://repl.it/), choose J
 
 1.  Write a function `sumByAllElementsMultipliedByFour` that takes an array as an
     argument and returns the sum of all elements multiplied by four.
+    ``function sumByAllElementsMultipliedByFour(array){
+        var result=0;
+        each(array,function(elements){
+            result+=(elements*4)
+            })
+            return result
+    }``
 
 2.  Observe that `sumByAllElementsMultipliedByFour` is a terrible name for a
     function &#x2013; you should also notice that `sumByAllElementsMultipliedByFour`
@@ -69,7 +124,11 @@ In order to complete these exercises, open [repl.it](https://repl.it/), choose J
 
     ```js
     function sumBy(numbers, f) {
-      // ...
+        var result=0;
+        each(numbers,function(element){
+         result+=f(element)
+        })
+      return result;
     }
     var numbers = [1, 2, 3, 4];
     sumBy(numbers, square); // => 30
@@ -82,8 +141,19 @@ In order to complete these exercises, open [repl.it](https://repl.it/), choose J
 
 3.  How can you use `sumBy` to compute the sum of an array of
     numbers (just the plain sum)?
+  //loop throo the array and each tieme aplay the function used in the input at the number of the array and sum the all inthe variable declaired    
 
 4.  Write a function `productBy` that works like `sumBy`, but for **products**.
+```
+function productBy(numbers, f) {
+        var result=0;
+        each(numbers,function(element){
+         result*=f(element)
+        })
+      return result;
+    }
+
+```
 
 #### Refactoring
 
